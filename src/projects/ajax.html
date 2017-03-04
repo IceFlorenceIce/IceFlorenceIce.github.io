@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<h1>JS demo 1</h1>
+	<script src="../js/jquery.js"></script>
+	<script>
+		$('h1').on('click', function(ev){
+			$.ajax({
+				url: './data.json'
+			}).done(function(ret){
+				console.log(ret);
+			});
+		});
+	</script>
+</body>
+</html>
