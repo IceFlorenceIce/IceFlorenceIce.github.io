@@ -1,0 +1,50 @@
+body,
+div,
+ol,
+li,
+h2,
+a {
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+}
+
+a {
+    text-decoration: none;
+    font-size: 22px;
+    font-family: 'Arial';
+    color: #551a8b;
+}
+
+.wrap {
+    width: 450px;
+    margin: 50px auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+.wrap > .list {
+    padding: 0 60px;
+    list-style-type: square;
+}
+
+.wrap > .list > li {
+    line-height: 50px;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.wrap > .list > li > h2:hover {
+    padding-left: 20px;
+    background: -webkit-linear-gradient(180deg, rgba(255, 255, 0, .2), rgba(255, 0, 0, .4));
+    background:    -moz-linear-gradient(180deg, rgba(255, 255, 0, .2), rgba(255, 0, 0, .4));
+    background:      -o-linear-gradient(180deg, rgba(255, 255, 0, .2), rgba(255, 0, 0, .4));
+    background:         linear-gradient(180deg, rgba(255, 255, 0, .2), rgba(255, 0, 0, .4));
+    -webkit-border-radius: 5px;
+       -moz-border-radius: 5px;
+         -o-border-radius: 5px;
+            border-radius: 5px;
+    -webkit-transition: all .6s;
+       -moz-transition: all .6s;
+         -o-transition: all .6s;
+            transition: all .6s;
+}
