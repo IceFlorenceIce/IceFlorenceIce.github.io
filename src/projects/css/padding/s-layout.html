@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>子容器padding实现2栏自适应布局</title>
+    <style>
+    div,
+    img,
+    p {
+        margin: 0;
+        padding: 0;
+        border: 0 none;
+    }
+    
+    .box {
+        width: 500px;
+        overflow: hidden;
+        resize: both;
+        padding: 20px;
+        margin: 50px auto;
+        border: 1px solid;
+        background-color: #abcdef;
+    }
+    
+    .box > img {
+        float: left;
+        width: 100px;
+    }
+    
+    .box > p {
+        padding-left: 120px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <img src="../float/img/smile.jpg" alt="一张微笑的图片">
+        <p>
+            STJ型人格，善于倾听，做事专注，可靠，自律，有较强的学习力和逻辑思维能力，善于总结和反思，能举一反三。 喜欢看书（经管，传记，励志，小说等），热爱运动（快走，慢跑，爬山，柔韧性锻炼等），喜欢并坚持写日记。 期望的工作状态：热爱，专业，高效。 3年工作经验，虽然没有从事编程开发工作，但对自己有了更清晰的认识和更长远坚定的职业规划，相信自己在技术这条路上，一定可以走好走远，也希望遇到彼此适合和彼此欣赏的你，一起为梦想奋斗。
+        </p>
+    </div>
+</body>
+
+</html>
