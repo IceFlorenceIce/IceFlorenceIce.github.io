@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Method Four writing-mode</title>
+    <style>
+    .container {
+        width: 500px;
+        height: 300px;
+        margin: 50px auto;
+        background-color: #f00;
+        color: #fff;
+        writing-mode: vertical-lr;/*Content flows vertically from top to bottom, horizontally from left to right. The next vertical line is positioned to the right of the previous line.*/
+    }
+    
+    .box {
+        width: 100px;
+        height: 60px;
+        background-color: #ccc;
+        margin: auto;    
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">Content flows vertically from top to bottom, horizontally from left to right. The next vertical line is positioned to the right of the previous line.
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>
