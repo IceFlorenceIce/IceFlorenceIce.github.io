@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Method Three translate</title>
+    <style>
+    .container {
+        width: 500px;
+        height: 300px;
+        margin: 50px auto;
+        background-color: #f00;
+        position: relative;
+    }
+    
+    .box {
+        width: 100px;
+        height: 60px;
+        background-color: #ccc;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webket-transform: translate(-50%, -50%);
+           -moz-transform: translate(-50%, -50%);
+             -o-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);/*水平方向向左移动自身宽度的50%，垂直方向向上移动自身宽度的50%*/
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>
