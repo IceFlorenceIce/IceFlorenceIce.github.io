@@ -1,0 +1,113 @@
+/* All tag */
+
+a { text-decoration: none; }
+
+.firsth { text-align: center; font-size: 48px; color: #f46208; padding-top: 80px; margin: auto; margin-bottom: 30px; }
+
+.secp { text-align: center; line-height: 18px; margin: auto; width: 600px; margin-bottom: 40px; }
+
+.banner, .portfolio, .stats, .team { margin-bottom: 20px; }
+
+body,a,img,h1,h2,h3,p,input,textarea { padding: 0; margin: 0; border:0 none; font-size: 14px; font-family: "Microsoft Yahei UI"; }
+
+
+/* header */
+
+header { background-color: #2e2e2e; }
+
+header > .container { width: 1200px; height: 60px; margin: 0 auto; }
+
+header > .container > a { display: block; float: left; height: 60px; line-height: 60px; }
+
+header > .container > a > img { vertical-align: middle; }
+
+header > .container > nav { float: right; font-weight: bold; }
+
+
+/* nav */
+
+nav > a { display: inline-block; height: 60px; line-height: 60px; padding: 0 10px; color: #fff; }
+
+nav > a:hover { background-color: #f46208; color: #2e2e2e; }
+
+
+/* banner */
+
+.banner { overflow: hidden; height: 470px; position: relative; background: url(../img/banner.jpg) no-repeat;}
+
+.banner > div { position: absolute; top: 50%; left: 50%; color: #ccc; -webkit-transform: translate(-50%,-50%); -moz-transform: translate(-50%,-50%); -o-transform: translate(-50%,-50%); transform: translate(-50%,-50%); }
+
+.banner > div > h1 { text-align: center; font-size: 50px; }
+
+.banner > div > h2 { text-align: center; font-size: 20px; }
+
+
+/* Portfolio */
+
+.portfolio { height: 670px; overflow: hidden; }
+
+.portfolio > span { display: block; text-align: center; margin: auto; margin-bottom: 20px; }
+
+.portfolio > span > a { color: #f46208; display: inline-block; border: 1px solid #f46208; margin-right: 10px; padding: 6px; font-weight: lighter; }
+
+.portfolio > span > a:hover { background-color: #f46208; color: #fff; }
+
+.portfolio > img { width: 100%; }
+
+
+/* stats */
+
+.stats > .wrap { width: 1200px; margin: 0 auto; }
+
+.stats > .wrap > .icons { width: 800px; height: 150px; margin: 0 auto; }
+
+.stats > .wrap > .icons > div { width: 200px; height: 150px; float: left; text-align: center; }
+
+.stats > .wrap > .icons > div > img { margin-bottom: 10px; }
+
+.stats > .wrap > .icons > div > h3 { font-weight: bold; margin-bottom: 10px; }
+
+.stats > .wrap > .icons > div > p { font-size: 20px; color: #f46208; font-weight: bold; }
+
+
+/* team */
+
+.team { background-color: #2e2e2e; }
+
+.team > .secp { color: #fff; }
+
+.team > .wrap { width: 1200px; margin: 0 auto; }
+
+.team > .wrap > .icons { width: 750px; margin: 0 auto; overflow: hidden; }
+
+.team > .wrap > .icons > div { width: 250px; height: 250px; text-align: center; float: left; color: #fff; }
+
+.team > .wrap > .icons > div > img { width: 140px; height: 140px; margin-bottom: 5px; }
+
+.team > .wrap > .icons > div > h3 { margin-bottom: 3px; }
+
+.team > .wrap > .icons > div > p { font-size: 10px; width: 250px; line-height: 14px; }
+
+
+
+/* contactus */
+
+.contactus { margin-bottom: 70px; }
+
+.contactus > form { width: 1200px; margin: 0 auto; }
+
+.contactus > form > div { width: 800px; margin: 0 auto; }
+
+.contactus > form > div > input { border:1px solid #ccc; width: 350px; height: 30px; margin: 0px 10px 8px 0px; padding: 5px; }
+
+.contactus > form > div > textarea { padding: 5px; border: 1px solid #ccc; width: 726px; height: 200px; margin-bottom: 10px; resize: none; }
+
+.contactus > form > .submit { background-color: #f46208; color: #fff; padding: 0 15px; line-height: 40px; display: block; margin: 0 auto; cursor: pointer; }
+
+/* footer */
+
+footer { background-color: #000; }
+
+footer > p { text-align: center; color: #fff; height: 60px; line-height: 60px; }
+
+
