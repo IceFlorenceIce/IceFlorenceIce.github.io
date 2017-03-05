@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>浮动与两侧皆自适应的流体布局</title>
+    <style>
+    body,
+    div,
+    p,
+    a,
+    img {
+        margin: 0;
+        padding: 0;
+        border: 0 none;
+    }
+    
+    body {
+        background-color: #abcdef;
+    }
+    
+    .container {
+        width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        background-color: #fff;
+        padding: 20px;
+        overflow: hidden;
+        resize: both;
+    }
+    /*一侧浮动,同时用margin-right隔开适合的间距*/
+    
+    .container > .left {
+        float: left;
+        margin-right: 20px;
+    }
+    /*另外一侧display: table-cell 实现两侧皆自适应的布局*/
+    
+    .container > .right {
+        display: table-cell;
+    }
+    
+    .container > .right > p {
+        font-size: 13px;
+        line-height: 18px;
+        margin-bottom: 10px;
+    }
+    
+    .container > .right > img {
+        width: 200px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <a href="#" class="left">
+            <img src="http://img.mukewang.com/53e2e9470001dfd200500050.jpg" alt="一张微笑的头像" id="mibHeadImg">
+        </a>
+        <div class="right">
+            <p>ISTJ型人格，善于倾听，做事专注，可靠，自律，有较强的学习力和逻辑思维能力，善于总结和反思，能举一反三。 喜欢看书（经管，传记，励志，小说等），热爱运动（快走，慢跑，爬山，柔韧性锻炼等），喜欢并坚持写日记。 期望的工作状态：热爱，专业，高效。 3年工作经验，虽然没有从事编程开发工作，但对自己有了更清晰的认识和更长远坚定的职业规划，相信自己在技术这条路上，一定可以走好走远，也希望遇到彼此适合和彼此欣赏的你，一起为梦想奋斗。
+            </p>
+            <img src="./img/hkdg.jpg" alt="黑客帝国">
+        </div>
+    </div>
+</body>
+
+</html>

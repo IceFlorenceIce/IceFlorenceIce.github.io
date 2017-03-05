@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>单侧定宽的浮动布局</title>
+    <style>
+    body,
+    div,
+    p,
+    a,
+    img {
+        margin: 0;
+        padding: 0;
+        border: 0 none;
+    }
+    
+    body {
+        background-color: #abcdef;
+    }
+    
+    .container {
+        width: 600px;
+		margin: 50px auto;
+        border: 1px solid #ccc;
+        background-color: #fff;
+        padding: 20px;
+        overflow: hidden;
+        resize: both;
+    }
+    /*左侧定宽＋浮动*/
+    .container > .left {
+        float: left;
+    }
+    
+    .container > .left img {
+        width: 60px;
+    }
+    /*右侧用margin-left或者padding-left实现单侧固定的流体布局*/
+    .container > .right {
+        margin-left: 80px;
+    }
+    
+    .container > .right > p {
+        font-size: 13px;
+        line-height: 18px;
+        margin-bottom: 10px;
+    }
+    
+    .container > .right > img {
+        width: 200px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <a href="#">
+                <img src="./img/smile.jpg" alt="一张微笑的头像">
+            </a>
+        </div>
+        <div class="right">
+            <p>ISTJ型人格，善于倾听，做事专注，可靠，自律，有较强的学习力和逻辑思维能力，善于总结和反思，能举一反三。 喜欢看书（经管，传记，励志，小说等），热爱运动（快走，慢跑，爬山，柔韧性锻炼等），喜欢并坚持写日记。 期望的工作状态：热爱，专业，高效。 3年工作经验，虽然没有从事编程开发工作，但对自己有了更清晰的认识和更长远坚定的职业规划，相信自己在技术这条路上，一定可以走好走远，也希望遇到彼此适合和彼此欣赏的你，一起为梦想奋斗。
+            </p>
+            <img src="./img/hkdg.jpg" alt="黑客帝国">
+        </div>
+    </div>
+</body>
+
+</html>
