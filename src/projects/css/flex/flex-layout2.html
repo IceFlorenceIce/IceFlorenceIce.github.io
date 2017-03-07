@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>flexbox牛逼布局</title>
+    <style>
+    body,
+    div,
+    span,
+    p {
+        margin: 0;
+        padding: 0;
+        border: 0 none;
+        font-size: 1em;
+        line-height: 1.5em;
+        font-family: 'Arial';
+        color: #414142;
+        -webkit-box-sizing: border-box;
+           -moz-box-sizing: border-box;
+                box-sizing: border-box;
+    }
+    
+    .container {
+        display: -webkit-flex;
+        display: flex;
+    }
+    
+    .elem {
+        border: 3px solid #6AC5AC;
+        position: relative;
+    }
+    
+    .elem-yellow {
+        border: 3px solid #FDC72F;
+    }
+    
+    .label,
+    .endlabel {
+        position: absolute;
+        background-color: #FDC72F;
+        line-height: 1em;
+    }
+    
+    .label {
+        top: 0;
+        left: 0;
+        padding: 0 3px 3px 0;
+    }
+    
+    .endlabel {
+        right: 0;
+        bottom: 0;
+        padding: 3px 0 0 3px;
+    }
+    
+    .initial {
+        -webkit-flex: initial;
+        flex: initial;
+        width: 200px;
+        min-width: 100px;
+    }
+    
+    .none {
+        -webkit-flex: none;
+        flex: none;
+        width: 200px;
+    }
+    
+    .flex1 {
+        -webkit-flex: 1;
+        flex: 1;
+    }
+    
+    .flex2 {
+        -webkit-flex: 2;
+        flex: 2;
+    }
+    p {
+        padding: 0 1em;
+        margin: 1em 0;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container elem">
+        <section class="elem elem-yellow initial">
+            <span class="label">&lt;div class="initial"></span>
+            <p>
+                空间足够的时候，我的宽度是200px，如果空间不足，我会变窄到100px，但不会再窄了。
+            </p>
+            <span class="endlabel">&lt;/div></span>
+        </section>
+        <section class="elem elem-yellow none">
+            <span class="label">&lt;div class="none"></span>
+            <p>
+                无论窗口如何变化，我的宽度一直是200px。
+            </p>
+            <span class="endlabel">&lt;/div></span>
+        </section>
+        <section class="elem elem-yellow flex1">
+            <span class="label">&lt;div class="flex1"></span>
+            <p>
+                我会占满剩余宽度的1/3。
+            </p>
+            <span class="endlabel">&lt;/div></span>
+        </section>
+        <section class="elem elem-yellow flex2">
+            <span class="label">&lt;div class="flex2"></span>
+            <p>
+                我会占满剩余宽度的2/3。
+            </p>
+            <span class="endlabel">&lt;/div></span>
+        </section>
+    </div>
+</body>
+
+</html>
