@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>flex垂直居中</title>
+    <style>
+    body,
+    div,
+    span,
+    p {
+        margin: 0;
+        padding: 0;
+        border: 0 none;
+        font-size: 1em;
+        line-height: 1.5em;
+        font-family: 'Arial';
+        color: #414142;
+        -webkit-box-sizing: border-box;
+           -moz-box-sizing: border-box;
+                box-sizing: border-box;
+    }
+    
+    .vertical-container {
+        height: 300px;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-align-items: center;
+        align-items: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+    }
+    
+    .elem {
+        border: 3px solid #6AC5AC;
+        position: relative;
+    }
+    
+    .elem-yellow {
+        border: 3px solid #FDC72F;
+    }
+    
+    .label,
+    .endlabel {
+        position: absolute;
+        background-color: #6AC5AC;
+        line-height: 1em;
+    }
+    
+    .elem-yellow > .label,
+    .elem-yellow > .endlabel {
+        background-color: #FDC72F;
+    }
+    
+    .elem-yellow p {
+        padding: 0 1em;
+        margin: 1em 0;
+    }
+    
+    .label {
+        top: 0;
+        left: 0;
+        padding: 0 3px 3px 0;
+    }
+    
+    .endlabel {
+        right: 0;
+        bottom: 0;
+        padding: 3px 0 0 3px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="vertical-container elem">
+        <span class="label">&lt;div class="vertical-container">
+        </span>
+        <section class="elem elem-yellow">
+            <span class="label">&lt;div>
+            </span>
+            <p>CSS总算是有了一种简单的垂直居布局的方法了！</p>
+            <span class="endlabel">&lt;/div>
+            </span>
+        </section>
+        <span class="endlabel">&lt;/div>
+        </span>
+    </div>
+</body>
+
+</html>

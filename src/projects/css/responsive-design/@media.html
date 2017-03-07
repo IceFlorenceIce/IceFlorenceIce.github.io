@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>媒体查询</title>
+    <style>
+    body,
+    div,
+    span,
+    p {
+        margin: 0;
+        padding: 0;
+        border: 0 none;
+        font-size: 1em;
+        line-height: 1.5em;
+        font-family: 'Arial';
+        color: #414142;
+        -webkit-box-sizing: border-box;
+           -moz-box-sizing: border-box;
+                box-sizing: border-box;
+    }
+    
+    ul {
+        padding-left: 40px;
+        margin: 20px 0;
+    }
+    
+    a {
+        text-decoration: none;
+        color: #D64078;
+    }
+    
+    @media screen and (min-width: 600px) {
+        nav {
+            float: left;
+            width: 25%;
+        }
+        section {
+            margin-left: 25%;
+        }
+    }
+    
+    @media screen and (max-width: 599px) {
+        nav li {
+            display: inline;
+        }
+    }
+    
+    .ipsum {
+        color: #734161;
+        background-color: #eee;
+    }
+    
+    .elem {
+        border: 3px solid #6AC5AC;
+        position: relative;
+    }
+    
+    .elem-red {
+        border: 3px solid #D64078;
+    }
+    
+    .elem-yellow {
+        border: 3px solid #FDC72F;
+    }
+    
+    .label,
+    .endlabel {
+        position: absolute;
+        background-color: #6AC5AC;
+        line-height: 1em;
+    }
+    
+    .elem-yellow > .label,
+    .elem-yellow > .endlabel {
+        background-color: #FDC72F;
+    }
+
+    .elem-red > .label,
+    .elem-red > .endlabel {
+        background-color: #D64078;
+    }
+    
+    .elem-yellow p {
+        padding: 0 1em;
+        margin: 1em 0;
+    }
+    
+    .label {
+        top: 0;
+        left: 0;
+        padding: 0 3px 3px 0;
+    }
+    
+    .endlabel {
+        right: 0;
+        bottom: 0;
+        padding: 3px 0 0 3px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container elem">
+        <span class="label">&lt;div class="container"></span>
+        <nav class="elem elem-red">
+            <span class="label">&lt;nav></span>
+            <ul>
+                <li>
+                    <a href="@media.html">Home</a>
+                </li>
+                <li>
+                    <a href="@media.html">Taco Menu</a>
+                </li>
+                <li>
+                    <a href="@media.html">Draft List</a>
+                </li>
+                <li>
+                    <a href="@media.html">Hours</a>
+                </li>
+                <li>
+                    <a href="@media.html">Directions</a>
+                </li>
+                <li>
+                    <a href="@media.html">Contact</a>
+                </li>
+            </ul>
+            <span class="endlabel">&lt;/nav></span>
+        </nav>
+        <section class="elem elem-yellow">
+            <span class="label">&lt;section></span>
+            <p>
+                当你调整浏览器窗口大小时，布局比以前更酷了！
+            </p>
+            <span class="endlabel">&lt;/section></span>
+        </section>
+        <section class="elem elem-yellow ipsum">
+            <span class="label">&lt;section></span>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.
+            </p>
+            <span class="endlabel">&lt;/section></span>
+        </section>
+    </div>
+</body>
+
+</html>
