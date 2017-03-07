@@ -33,7 +33,7 @@ nav > a:hover { background-color: #f46208; color: #2e2e2e; }
 
 /* banner */
 
-.banner { overflow: hidden; height: 470px; position: relative; background: url(../img/banner.jpg) no-repeat;}
+.banner { overflow: hidden; height: 470px; position: relative; background: url(../img/banner.jpg) no-repeat; background-size: 100%; -moz-background-size:100%; }
 
 .banner > div { position: absolute; top: 50%; left: 50%; color: #ccc; -webkit-transform: translate(-50%,-50%); -moz-transform: translate(-50%,-50%); -o-transform: translate(-50%,-50%); transform: translate(-50%,-50%); }
 
