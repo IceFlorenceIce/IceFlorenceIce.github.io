@@ -15,7 +15,7 @@ body,a,img,h1,h2,h3,p,input,textarea { padding: 0; margin: 0; border:0 none; fon
 
 header { background-color: #2e2e2e; }
 
-header > .container { width: 1200px; height: 60px; margin: 0 auto; }
+header > .container { width: 1200px; height: 60px; margin: 0 auto; overflow: hidden; }
 
 header > .container > a { display: block; float: left; height: 60px; line-height: 60px; }
 
@@ -100,7 +100,7 @@ nav > a:hover { background-color: #f46208; color: #2e2e2e; }
 
 .contactus > form > div > input { border:1px solid #ccc; width: 350px; height: 30px; margin: 0px 10px 8px 0px; padding: 5px; }
 
-.contactus > form > div > textarea { padding: 5px; border: 1px solid #ccc; width: 726px; height: 200px; margin-bottom: 10px; resize: none; }
+.contactus > form > div > textarea { padding: 5px; border: 1px solid #ccc; width: 722px; height: 200px; margin-bottom: 10px; resize: none; }
 
 .contactus > form > .submit { background-color: #f46208; color: #fff; padding: 0 15px; line-height: 40px; display: block; margin: 0 auto; cursor: pointer; }
 
