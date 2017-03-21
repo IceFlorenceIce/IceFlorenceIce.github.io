@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>抽奖系统</title>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .title {
+        font-size: 24px;
+        font-weight: bold;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        text-align: center;
+        margin: 0 auto;
+        color: blue;
+    }
+    
+    .btns {
+        width: 180px;
+        height: 30px;
+        margin: 0 auto;
+    }
+    
+    .btns input {
+        width: 80px;
+        height: 30px;
+        float: left;
+        margin-right: 20px;
+        background-color: #036;
+        color: #fff;
+        text-align: center;
+        border-radius: 7px;
+    }
+    
+    .btns input:last-of-type {
+        margin-right: 0;
+    }
+    </style>
+    <script>
+    var data = ['Phone5', 'Ipad', '三星笔记本', '佳能相机', '惠普打印机', '谢谢参与', '50元充值卡', '1000元超市购物券'],
+        timer = null,
+        flag = 0;
+
+    window.onload = function() {
+        var play = document.getElementById('play'),
+            stop = document.getElementById('stop'),
+            title = document.getElementById('title');
+
+        //开始抽奖
+        play.onclick = playFun;
+        stop.onclick = stopFun;
+
+
+        function playFun() {
+            clearInterval(timer);
+            timer = setInterval(function() {
+                var random = Math.floor(Math.random() * data.length);
+                title.innerHTML = data[random];
+            }, 50);
+            play.disabled = true;
+        }
+
+        function stopFun() {
+            clearInterval(timer);
+            play.disabled = false;
+
+        }
+
+        //键盘事件－回车键
+        document.onkeyup = function(event) {
+            event = event || window.event;
+            if (event.keyCode == 13) {
+                if (flag == 0) {
+                    playFun();
+                    flag = 1;
+                } else {
+                    stopFun();
+                    flag = 0;
+                }
+            }
+        }
+    }
+    </script>
+</head>
+
+<body>
+    <div id="title" class="title">开始抽奖啦</div>
+    <div class="btns">
+        <input type="button" id="play" value="开 始">
+        <input type="button" id="stop" value="停 止">
+    </div>
+</body>
+
+</html>
