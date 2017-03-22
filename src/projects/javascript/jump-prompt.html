@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>跳转提示页面</title>
+</head>
+
+<body>
+    <h1>操作成功</h1>
+    <span id="seconds">5</span><span>秒后返回到主页&nbsp;</span><a href="javascript:history.back();">返回</a>
+    <script>
+    var num = 5;
+    var timer = setInterval(goo, 1000);
+
+    function goo() {
+        num--;
+        document.getElementById('seconds').innerHTML = num;
+        if (num == 0) {
+            window.location.href = 'http://www.cnblogs.com/iceflorence/';
+            clearInterval(timer);
+        }
+    }
+    </script>
+</body>
+
+</html>
