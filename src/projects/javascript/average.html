@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>求平均分</title>
+</head>
+
+<body>
+    <script>
+    window.onload = function() {
+        var mydate = new Date(),
+            myyear = mydate.getFullYear(),
+            mymonth = mydate.getMonth() + 1,
+            myday = mydate.getDate(),
+            weekday = ["星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"],
+            mynum = mydate.getDay(),
+            myweekday = weekday[mynum],
+            scoreStr = "小明:87;小花:81;小红:97;小天:76;小张:74;小小:94;小西:90;小伍:76;小迪:64;小曼:76",
+            arr = scoreStr.split(';'),
+            sum = 0;
+        for (var i = 0; i < arr.length; i++) {
+            sum += parseInt(arr[i].substr(arr[i].indexOf(':') + 1, 2));
+        }
+
+        document.write(myyear + '年' + mymonth + '月' + myday + '日' + '&nbsp;' + myweekday + '&nbsp;' + '班级平均分为：' + Math.floor(sum / arr.length));
+
+    }
+    </script>
+</body>
+
+</html>
