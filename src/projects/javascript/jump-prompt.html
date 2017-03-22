@@ -8,7 +8,9 @@
 
 <body>
     <h1>操作成功</h1>
-    <span id="seconds">5</span><span>秒后返回到主页&nbsp;</span><a href="javascript:history.back();">返回</a>
+    <span id="seconds">5</span><span>秒后返回到主页&nbsp;</span>
+    <a href="javascript:clearInterval(timer);">停止跳转</a>
+    <a href="javascript:history.back();">返回</a><!-- 注意: 在窗口中运行该程序时，该窗口一定要有历史浏览记录，否则"返回"无效果。 -->
     <script>
     var num = 5;
     var timer = setInterval(goo, 1000);
