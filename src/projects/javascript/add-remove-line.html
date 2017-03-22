@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>添加删除行</title>
+</head>
+
+<body>
+    <table border="1" width="50%" id="table">
+        <tr>
+            <th>学号</th>
+            <th>姓名</th>
+            <th>操作</th>
+        </tr>
+        <tr>
+            <td>xh001</td>
+            <td>王小明</td>
+            <td><a href="javascript:;" onclick="del(this);">删除</a></td>
+            <!-- 在删除按钮上添加点击事件 -->
+        </tr>
+        <tr>
+            <td>xh002</td>
+            <td>刘小芳</td>
+            <td><a href="javascript:;" onclick="del(this);">删除</a></td>
+            <!-- 在删除按钮上添加点击事件 -->
+        </tr>
+    </table>
+    <input type="button" value="添加一行" onclick="add();">
+    <!-- 在添加按钮上添加点击事件 -->
+    <script>
+    window.onload = function() {
+        bgcChange();
+    }
+
+    // 鼠标移动改变背景,通过给每行绑定鼠标移上事件和鼠标移除事件来改变所在行背景色。
+    function bgcChange() {
+        var tr = document.getElementsByTagName('tr');
+        for (var i = 0; i < tr.length; i++) {
+            tr[i].onmouseover = function() {
+                this.style.backgroundColor = '#f2f2f2';
+            }
+            tr[i].onmouseout = function() {
+                this.style.backgroundColor = '#fff';
+            }
+        }
+    }
+
+    //编写一个函数，供添加按钮使用，动态在表格的最后一行添加子节点
+    var num = 2;
+    var tab = document.getElementById('table').lastChild;
+
+    function add() {
+        num++;
+        var tr = document.createElement('tr'),
+            xh = document.createElement('td'),
+            xm = document.createElement('td'),
+            del = document.createElement('td');
+        xh.innerHTML = 'xh00' + num;
+        xm.innerHTML = '第' + num + '个学生';
+        del.innerHTML = '<a href="javascript:;" onclick="del(this);">删除</a>';
+        tr.appendChild(xh);
+        tr.appendChild(xm);
+        tr.appendChild(del);
+        tab.appendChild(tr);
+        bgcChange();
+    }
+
+    //编写删除函数
+    function del(obj) {
+        var tr = obj.parentNode.parentNode;
+        tab.removeChild(tr);
+    }
+    </script>
+</body>
+
+</html>
