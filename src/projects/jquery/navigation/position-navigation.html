@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>爱淘气购物网－JQuery网页定位导航特效</title>
+    <style>
+
+    /*All tag*/
+
+    html, body, div, ul, li, img, h1, h2 { margin: 0; padding: 0; }
+    
+    ul { list-style: none; }
+    
+    a { text-decoration: none; color: #333; }
+
+    /*menu*/
+    
+    #menu { position: fixed; top: 100px; left: 50%; margin-left: 400px; }
+    
+    #menu > li > a { display: block; padding: 10px 15px; height: 30px; line-height: 30px; font-size: 14px; font-weight: bold; margin: 5px 0; }
+    
+    #menu > li > a:hover, #menu > li > a.current { color: #fff; background-color: #0088bb; }
+    
+    /*content*/
+    
+    #content { width: 800px; margin: 30px auto; }
+    
+    h1 { color: #0088bb; font-size: 28px; margin-bottom: 10px; }
+    
+    .item { border: 1px dotted #0088bb; padding: 20px; margin-bottom: 20px; }
+    
+    .item > h2 { font-size: 16px; padding-bottom: 5px; border-bottom: 2px solid #0088bb; margin-bottom: 10px; }
+    
+    .item-list > li { display: inline-block; margin-right: 10px; }
+    
+    .item-list > li > a > img { width: 230px; height: 230px; border: none; }
+    
+    </style>
+</head>
+
+<body>
+    <ul id="menu">
+        <li><a class="current" href="#item1">1F&nbsp;男装</a></li>
+        <li><a href="#item2">2F&nbsp;女装</a></li>
+        <li><a href="#item3">3F&nbsp;美妆</a></li>
+        <li><a href="#item4">4F&nbsp;数码</a></li>
+        <li><a href="#item5">5F&nbsp;母婴</a></li>
+    </ul>
+    <div id="content">
+        <h1>爱淘气购物网</h1>
+        <div id="item1" class="item">
+            <h2>1F&nbsp;男装</h2>
+            <ul class="item-list">
+                <li>
+                    <a href="#"><img src="1F.jpg" alt="商品图片"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="1F.jpg" alt="商品图片"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="1F.jpg" alt="商品图片"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="1F.jpg" alt="商品图片"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="1F.jpg" alt="商品图片"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="1F.jpg" alt="商品图片"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="1F.jpg" alt="商品图片"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="1F.jpg" alt="商品图片"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="1F.jpg" alt="商品图片"></a>
+                </li>
+            </ul>
+        </div>
+        <div id="item2" class="item">
+            <h2>2F&nbsp;女装</h2>
+            <ul class="item-list">
+                <li>
+                    <a href="#"><img src="2F.jpg" alt="商品图片"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="2F.jpg" alt="商品图片"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="2F.jpg" alt="商品图片"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="2F.jpg" alt="商品图片"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="2F.jpg" alt="商品图片"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="2F.jpg" alt="商品图片"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="2F.jpg" alt="商品图片"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="2F.jpg" alt="商品图片"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="2F.jpg" alt="商品图片"></a>
+                </li>
+            </ul>
+        </div>
+        <div id="item3" class="item">
+            <h2>3F&nbsp;美妆</h2>
+            <ul class="item-list">
+                <li>
+                    <a href="#"><img src="3F.jpg" alt="商品图片"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="3F.jpg" alt="商品图片"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="3F.jpg" alt="商品图片"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="3F.jpg" alt="商品图片"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="3F.jpg" alt="商品图片"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="3F.jpg" alt="商品图片"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="3F.jpg" alt="商品图片"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="3F.jpg" alt="商品图片"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="3F.jpg" alt="商品图片"></a>
+                </li>
+            </ul>
+        </div>
+        <div id="item4" class="item">
+            <h2>4F&nbsp;数码</h2>
+            <ul class="item-list">
+                <li>
+                    <a href="#"><img src="4F.png" alt="商品图片"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="4F.png" alt="商品图片"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="4F.png" alt="商品图片"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="4F.png" alt="商品图片"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="4F.png" alt="商品图片"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="4F.png" alt="商品图片"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="4F.png" alt="商品图片"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="4F.png" alt="商品图片"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="4F.png" alt="商品图片"></a>
+                </li>
+            </ul>
+        </div>
+        <div id="item5" class="item">
+            <h2>5F&nbsp;母婴</h2>
+            <ul class="item-list">
+                <li>
+                    <a href="#"><img src="5F.jpg" alt="商品图片"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="5F.jpg" alt="商品图片"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="5F.jpg" alt="商品图片"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="5F.jpg" alt="商品图片"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="5F.jpg" alt="商品图片"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="5F.jpg" alt="商品图片"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="5F.jpg" alt="商品图片"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="5F.jpg" alt="商品图片"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="5F.jpg" alt="商品图片"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+    $(function() {
+        $(window).scroll(function() {
+            //滚动条发生滚动时，要获取相应的值
+            var top = $(document).scrollTop();
+            var menu = $('#menu');
+            var items = $('#content').find('.item');
+            var currentId = '';
+            //获取相应楼层的ID
+            items.each(function() {
+                var m = $(this);
+                var itemTop = m.offset().top;
+                if (top > itemTop - 300) {
+                    currentId = '#' + m.attr('id');
+                } else {
+                    return false;
+                }
+                //给相应楼层的 a 设置 current，取消其他链接的current
+                var currentLink = menu.find('.current');
+                if (currentId && currentLink.attr('href') != currentId) {
+                    currentLink.removeClass('current');
+                    menu.find('[href=' + currentId + ']').addClass('current');
+                }
+            });
+        });
+    });
+    </script>
+</body>
+
+</html>
