@@ -1,0 +1,54 @@
+.mi-activities {
+	margin-top: 15px;
+	margin-bottom: 15px;
+
+}
+.activities {
+	position: relative;
+}
+.home-channel-list {
+    background: #333;
+    background: rgba(0, 0, 0, .6);
+    width: 230px;
+    padding: 10px;
+    box-sizing: border-box;
+    float: left;
+}
+
+.home-channel-list-tips {
+    float: left;
+    padding: 10px;
+    text-align: center;
+}
+
+.home-channel-list-tips-link {
+    font-size: 12px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, .7);
+}
+
+.home-channel-list-tips-link:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+.home-channel-list-tips-link > .iconfont {
+    font-size: 24px;
+    display: block;
+}
+.home-promo-list {
+	float: left;
+	margin-left: 14px;
+
+}
+.home-promo-list-tips {
+	float: left;
+	margin-right: 17px;
+}
+.home-promo-list-tips:last-child {
+	margin-right: 0;
+}
+.home-promo-list-img {
+	width: 316px;
+	height: 148px;
+}
+

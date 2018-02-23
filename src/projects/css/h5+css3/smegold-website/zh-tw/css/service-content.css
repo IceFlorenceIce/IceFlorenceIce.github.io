@@ -1,0 +1,163 @@
+/*首屏
+==========================================================================
+*/
+
+.service-main-container {
+    background: url('../img/serviceBanner.png') center top no-repeat;
+}
+
+
+
+/*核心专业
+==========================================================================
+  */
+
+.service-content-container {
+    padding-bottom: 30px;
+}
+
+.service-content-introduction {
+    font-size: 20px;
+    color: #666;
+    line-height: 35px;
+    text-align: left;
+}
+
+.service-content-introduction:first-of-type {
+    padding-bottom: 260px;
+    margin-bottom: 20px;
+    background: url('../img/professionalConsult.png') center bottom no-repeat;
+}
+
+.solution-subheadline {
+    padding-bottom: 30px;
+}
+
+
+
+/*专业金融咨询解决方案
+==========================================================================
+*/
+
+
+/*轮播调整*/
+
+.flexslider {
+    width: 816px;
+}
+
+.flex-control-nav.flex-control-paging {
+    display: none;
+}
+
+.flex-direction-nav a {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.flex-direction-nav .flex-next {
+    background-position: 0 -103px;
+}
+
+.flex-direction-nav .flex-prev {
+    background-position: 0 -13px;
+}
+
+.solution-tab {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #c2c2c2;
+}
+
+.solution-item,
+.system-item {
+    font-size: 16px;
+    color: #2f2f2f;
+    height: 50px;
+    line-height: 50px;
+    cursor: pointer;
+}
+
+.solution-item-active {
+    color: #0091f2;
+    font-weight: bold;
+    border-bottom: 2px solid #0091f2;
+}
+
+.solution-info {
+    padding-top: 40px;
+}
+
+.solution-info-headline {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.solution-info-para {
+    font-size: 18px;
+    height: 30px;
+    line-height: 30px;
+    color: #666;
+    text-align: left;
+}
+
+.solution-flex-tablist {
+    width: 100%;
+}
+
+.solution-img-item {
+    width: 816px;
+    margin-right: 20px;
+}
+
+
+
+/*自主研发的金融服务系统
+==========================================================================
+*/
+
+.system-container {
+    position: relative;
+}
+
+.system-info-headline {
+    font-size: 20px;
+    color: #0075c2;
+    text-align: left;
+    padding-top: 66px;
+    padding-bottom: 20px;
+}
+
+.system-info-para {
+    text-align: left;
+    font-size: 18px;
+    color: #929398;
+    line-height: 30px;
+}
+
+.system-flex-container {
+    width: 42%;
+}
+
+.system-flex-container .flex-item {
+    text-align: right;
+}
+
+.system-flex-item {
+    height: 500px;
+    overflow: scroll;
+    padding-right: 10px;
+}
+
+/*.circle-shadow {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-color: #0075c2;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    bottom: 0;
+    left: 230px;
+    opacity: 0.7;
+}*/

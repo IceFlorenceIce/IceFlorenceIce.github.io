@@ -210,7 +210,7 @@
             </ul>
         </div>
     </div>
-    <script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+    <script src="../../../js/jquery.js"></script>
     <script>
     $(function() {
         $(window).scroll(function() {
@@ -232,7 +232,7 @@
                 var currentLink = menu.find('.current');
                 if (currentId && currentLink.attr('href') != currentId) {
                     currentLink.removeClass('current');
-                    menu.find('[href=' + currentId + ']').addClass('current');
+                    menu.find('[href=' + 'currentId' + ']').addClass('current');
                 }
             });
         });

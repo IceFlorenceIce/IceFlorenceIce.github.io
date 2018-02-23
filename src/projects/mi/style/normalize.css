@@ -103,6 +103,7 @@ pre {
  */
 
 a {
+  text-decoration: none;
   background-color: transparent; /* 1 */
   -webkit-text-decoration-skip: objects; /* 2 */
 }
@@ -458,4 +459,8 @@ template {
 
 [hidden] {
   display: none;
+}
+
+ul {
+  list-style: none;
 }

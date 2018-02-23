@@ -1,0 +1,481 @@
+/*首屏
+==========================================================================
+*/
+
+.main-container {
+    padding-top: 80px;
+    width: 100%;
+    height: 1310px;
+    background: url('../img/mountain.png') center bottom no-repeat;
+    position: relative;
+}
+
+.main-headline {
+    font-size: 48px;
+    color: #38393a;
+    margin-top: 26px;
+}
+
+.main-subheadline {
+    font-size: 30px;
+    color: #929398;
+    margin-top: 32px;
+}
+
+
+
+
+
+
+/*客户第一，服务为先*/
+
+.customer-container {
+    position: absolute;
+    width: 100%;
+    bottom: 20px;
+}
+
+.customer-headline {
+    color: #fff;
+    font-size: 34px;
+    margin-bottom: 30px;
+}
+
+.customer-subheadline {
+    font-size: 20px;
+    color: #bfe0e8;
+    margin-bottom: 18px;
+}
+
+.service-headline {
+    color: #fff;
+    font-size: 28px;
+    margin-top: 28px;
+    margin-bottom: 20px;
+}
+
+.service-subheadline {
+    color: #bfe0e8;
+    font-size: 18px;
+    margin-bottom: 9px;
+}
+
+@-webkit-keyframes imgmove {
+    from {
+        -webkit-transform: rotate(-70deg);
+                transform: rotate(-70deg);
+    }
+    to {
+        -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+    }
+}
+
+@keyframes imgmove {
+    from {
+        -webkit-transform: rotate(-70deg);
+                transform: rotate(-70deg);
+    }
+    to {
+        -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+    }
+}
+
+.customer-img:hover {
+    -webkit-animation: imgmove .5s forwards;
+            animation: imgmove .5s forwards;
+}
+
+
+
+
+
+
+
+/*专业金融咨询解决方案
+==========================================================================
+*/
+
+.solution-plan-container {
+    width: 100%;
+    height: 720px;
+    padding-bottom: 70px;
+    background: url('../img/oval.png') right -270px top -150px no-repeat;
+    background-color: #f5f7f9;
+}
+
+.solution-plan-item-top {
+    padding-top: 30px;
+    height: 205px;
+}
+
+.human-resource-checking {
+    background: url('../img/humanResourceChecking.png') center 30px no-repeat;
+    background-size: auto 113px;
+    background-color: #e8f2fa;
+}
+.solution-plan-item:hover .human-resource-checking {
+    background: url('../img/humanResourceCheckingWhite.png') center 30px no-repeat;
+}
+.business-process-improvement {
+    background: url('../img/businessProcessImprovement.png') center 30px no-repeat;
+    background-size: auto 113px;
+    background-color: #e8f2fa;
+}
+.solution-plan-item:hover .business-process-improvement {
+    background: url('../img/businessProcessImprovementWhite.png') center 30px no-repeat;
+}
+.ranking {
+    background: url('../img/ranking.png') center 30px no-repeat;
+    background-size: auto 113px;
+    background-color: #e8f2fa;
+}
+.solution-plan-item:hover .ranking {
+    background: url('../img/rankingWhite.png') center 30px no-repeat;
+}
+
+.credit-consultants {
+    background: url('../img/creditConsultants.png') center 30px no-repeat;
+    background-size: auto 113px;
+    background-color: #e8f2fa;
+}
+.solution-plan-item:hover .credit-consultants {
+    background: url('../img/creditConsultantsWhite.png') center 30px no-repeat;
+}
+
+.cross-bussiness {
+    background: url('../img/crossBussiness.png') center 30px no-repeat;
+    background-size: auto 113px;
+    background-color: #e8f2fa;
+}
+.solution-plan-item:hover .cross-bussiness {
+    background: url('../img/crossBussinessWhite.png') center 30px no-repeat;
+}
+
+.solution-plan-item:hover .solution-plan-item-top {
+    background-color: #2080D2;
+}
+
+.even {
+    background-color: #dbebf8;
+}
+
+.solution-plan-item-top-headline {
+    margin-top: 125px;
+    font-size: 22px;
+}
+
+.solution-plan-item-top-subheadline {
+    margin-top: 5px;
+}
+
+.solution-plan-item-bottom {
+    padding-top: 30px;
+    height: 240px;
+    position: relative;
+    border: 1px solid #dbebf8;
+}
+
+.solution-plan-item-bottom-headline,
+.solution-plan-item-bottom-subheadline {
+    width: 80%;
+    margin: 0 auto;
+    font-weight: normal;
+}
+
+.solution-plan-item-bottom-subheadline {
+    display: none;
+    text-align: left;
+    padding-left: 5%;
+}
+
+.solution-plan-item-bottom-link {
+    width: 50%;
+    height: 25px;
+    left: 50%;
+    margin-left: -25%;
+    line-height: 25px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #999;
+    position: absolute;
+    bottom: 50px;
+}
+
+.solution-plan-item {
+    -webkit-transition: .06s linear;
+    transition: .06s linear;
+}
+
+.solution-plan-item:hover {
+    -webkit-box-shadow: 0 0 20px #2080D2;
+            box-shadow: 0 0 20px #2080D2;
+    z-index: 1;
+    position: relative;
+    -webkit-box-flex: 1.5;
+        -ms-flex: 1.5;
+            flex: 1.5;
+}
+
+
+
+.solution-plan-item:hover .solution-plan-item-top-headline {
+    color: #fff;
+}
+
+.solution-plan-item:hover .solution-plan-item-bottom-headline {
+    display: none;
+}
+
+.solution-plan-item:hover .solution-plan-item-bottom-subheadline {
+    display: block;
+}
+
+.solution-plan-item:hover .solution-plan-item-bottom-link {
+    border-color: #2080D2;
+    color: #2080D2;
+    width: 60%;
+    margin-left: -30%;
+}
+
+
+
+
+
+
+
+/*自主研发的金融服务系统
+==========================================================================
+*/
+
+.service-system-container {
+    width: 100%;
+    height: 720px;
+    background: url('../img/oval.png') left -400px top 50px no-repeat;
+}
+
+.service-system-tablist {
+    height: 360px;
+}
+
+.service-system-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+
+.service-system-item-img {
+    width: 122px;
+    height: 122px;
+    border-radius: 50%;
+    /*background: url('../img/computerSystem.png') center top no-repeat;*/
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -61px;
+}
+.industry-chain .service-system-item-img {
+    background: url('../img/industry-chain.png') center top no-repeat;  
+    background-color: #fff;
+}
+.industry-chain:hover .service-system-item-img {
+    background: url('../img/industry-chain-active.png') center top no-repeat;
+}
+.risk-manage .service-system-item-img {
+    background: url('../img/risk-manage.png') center top no-repeat;
+    background-color: #fff;  
+}
+.risk-manage:hover .service-system-item-img {
+    background: url('../img/risk-manage-active.png') center top no-repeat;
+}
+.loan-manage .service-system-item-img {
+    background: url('../img/loan-manage.png') center top no-repeat; 
+    background-color: #fff; 
+}
+.loan-manage:hover .service-system-item-img {
+    background: url('../img/loan-manage-active.png') center top no-repeat;
+}
+.financial-net .service-system-item-img {
+    background: url('../img/financial-net.png') center top no-repeat;  
+    background-color: #fff;
+}
+.financial-net:hover .service-system-item-img {
+    background: url('../img/financial-net-active.png') center top no-repeat;
+}
+.business-assist .service-system-item-img {
+    background: url('../img/business-assist.png') center top no-repeat;
+    background-color: #fff;  
+}
+.business-assist:hover .service-system-item-img {
+    background: url('../img/business-assist-active.png') center top no-repeat;
+}
+.human-test .service-system-item-img {
+    background: url('../img/human-test.png') center top no-repeat;  
+    background-color: #fff;
+}
+.human-test:hover .service-system-item-img {
+    background: url('../img/human-test-active.png') center top no-repeat;
+}
+
+.service-system-item-headline {
+    width: 240px;
+    height: 250px;
+    line-height: 250px;
+    border: 1px solid #dbebf8;
+    border-radius: 10px;
+    font-size: 20px;
+    color: #0075c2;
+}
+
+.service-system-item-subheadline {
+    font-size: 14px;
+    width: 240px;
+    height: 100px;
+    overflow: scroll;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -120px;
+    color: #0075c2;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 10px;
+    text-align: left;
+    font-weight: normal;
+    display: none;
+}
+
+.service-system-item:hover .service-system-item-headline {
+    border: 2px solid #0075c2;
+    line-height: 200px;
+}
+
+/*.service-system-item:hover .service-system-item-img {
+    background: url('../img/moneySystem.png') center top no-repeat;
+}*/
+
+.service-system-item:hover .service-system-item-subheadline {
+    display: block;
+}
+
+
+
+
+
+
+/*战略合作伙伴
+==========================================================================
+*/
+
+.partner-container {
+    width: 100%;
+    height: 620px;
+    background: url('../img/partnerBg.png') center bottom no-repeat;
+    background-color: #f5f7f9;
+}
+
+.partner-item {
+    width: 390px;
+    height: 330px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-shadow: 0 5px 5px #ccc;
+            box-shadow: 0 5px 5px #ccc;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.partner-item-body {
+    width: 100%;
+    height: 100%;
+    padding-top: 30%;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.partner-item-body-hover {
+    opacity: 0;
+    filter: Alpha(opacity=0);
+    position: absolute;
+    top: 330px;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.partner-item:hover .partner-item-body {
+    margin-top: -100%;
+    opacity: 0;
+    filter: Alpha(opacity=0);
+}
+
+.partner-item:hover .partner-item-body-hover {
+    opacity: 1;
+    filter: Alpha(opacity=100);
+    top: 30px;
+}
+
+.partner-item-top-headline {
+    font-size: 24px;
+    margin-top: 30px;
+    color: #38393a;
+}
+
+.partner-item-top-subheadline {
+    font-size: 14px;
+    color: #929398;
+    margin-top: 25px;
+}
+
+.guoxin {
+    background: url('../img/guoxin.png') center 60px no-repeat;
+}
+
+.huatong {
+    background: url('../img/huatong.png') center 60px no-repeat;
+}
+
+.renbao {
+    background: url('../img/renbao.png') center 80px no-repeat;
+}
+
+.detail-view {
+    display: inline-block;
+    width: 180px;
+    height: 50px;
+    line-height: 50px;
+    color: #0075c2;
+    border: 1px solid #0075c2;
+    margin-top: 65px;
+    border-radius: 5px;
+    background: url('../img/arrow.png') right 20px center no-repeat;
+}

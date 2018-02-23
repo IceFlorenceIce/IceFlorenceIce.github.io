@@ -1,0 +1,43 @@
+.category-banners {
+	position: relative;
+}
+.category-item {
+    width: 230px;
+    height: 460px;
+    box-sizing: border-box;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #333;
+    background: rgba(0, 0, 0, .6);
+    overflow: hidden;
+}
+.category-item-list {
+	line-height: 42px;
+	height: 42px;
+	padding-left: 30px;
+	padding-right: 50px;
+	position: relative;
+
+}
+.category-item-list:hover {
+	background: #ff6700;
+}
+.category-item-list-link {
+	color: #fff;
+	font-size: 14px;
+}
+.icon-right {
+	position: absolute;
+	right: 15px;
+	color: #fff;
+	font-size: 30px;
+
+}
+.category-banners-item {
+	position: absolute;
+	z-index: -1;
+	top: 0;
+}
+.category-banners-item-img {
+	position: absolute;
+}

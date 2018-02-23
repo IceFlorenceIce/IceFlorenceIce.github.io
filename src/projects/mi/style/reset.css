@@ -1,0 +1,18 @@
+html,
+body,
+div,
+ul,
+li,
+h2 {
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}

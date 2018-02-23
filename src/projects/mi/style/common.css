@@ -1,30 +1,41 @@
 .container {
-  color: #333;
-  font-size: 16px;
-  font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
 }
 
-.container.grey {
-  background: #f5f5f5;
+ .grey {
+    background: #f5f5f5;
+    padding-top: 40px;
+    padding-bottom: 30px;
 }
 
-.container>.row {
-  margin: 0 auto;
-  width: 1226px;
+.container > .row {
+    margin: 0 auto;
+    width: 1226px;
 }
 
 .util-left {
-  float: left;
+    float: left;
 }
 
 .util-right {
-  float: right;
+    float: right;
 }
 
 .clearfix::after {
-  content: '';
-  display: block;
-  visibility: hidden;
-  clear: both;
-  zoom: 1;
+    content: '';
+    display: table;
+    clear: both;
+    zoom: 1;
+}
+.title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    height: 50px;
+    line-height: 50px;
+
 }

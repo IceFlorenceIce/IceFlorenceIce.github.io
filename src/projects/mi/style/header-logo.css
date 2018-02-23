@@ -1,0 +1,92 @@
+.mi-header {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.mi-header > .row {
+	position: relative;
+}
+.mi-logo {
+	display: inline-block;
+	width: 55px;
+	height: 55px;
+	margin-right: 10px;
+	overflow: hidden;
+	background-color: #ff6700;
+	position: relative;
+
+}
+
+.mi-logo-img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -25px;
+	margin-top: -25px;
+}
+
+.gif-img {
+	display: inline-block;
+	width: 150px;
+	height: 55px;
+	background: url(http://c1.mifile.cn/f/i/g/2015/gif/yybjb.gif) no-repeat center bottom;
+}
+
+.header-nav {
+	display: inline-block;
+	height: 55px;
+	overflow: hidden;
+}
+.header-nav-item {
+	float: left;
+	padding: 12px;
+}
+.header-nav-item-link {
+	color: #333;
+}
+.header-nav-item-link:hover {
+	color: #ff6700;
+}
+
+.header-search {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.header-search-input {
+	outline: 0;
+	font-size: 14px;
+	width: 220px;
+	height: 48px;
+	line-height: 48px;
+	padding: 0 10px;
+	border: 1px solid #e0e0e0;
+}
+.header-search-input:focus {
+	border: 1px solid #ff6700;
+}
+
+.header-search-icon-container {
+	width: 48px;
+	height: 48px;
+	border: 1px solid #e0e0e0;
+	border-left: none;
+	float: right;
+	position: relative;
+	cursor: pointer;
+}
+.header-search-icon-container:hover {
+	color: #fff;
+	background: #ff6700;
+}
+.header-search-icon {
+	font-size: 24px;
+	font-weight: bold;
+	position: absolute;
+	top: 50%;
+	margin-top: -12px;
+	left: 50%;
+	margin-left: -12px;
+
+
+
+}

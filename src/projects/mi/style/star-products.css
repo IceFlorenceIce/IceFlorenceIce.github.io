@@ -1,0 +1,33 @@
+.rainbow-item-list {
+    float: left;
+    margin-right: 14px;
+    width: 234px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    border-top: 1px solid #ffac13;
+    background: #fafafa;
+    text-align: center;
+}
+
+.rainbow-item-list:last-child {
+    margin-right: 0;
+}
+.rainbow-item-list a {
+	color: #212121;
+	font-size: 14px;
+	font-weight: 400;
+}
+.desc {
+	color: #b0b0b0;
+	font-size: 12px;
+	margin: 0 20px 12px;
+}
+.price {
+	color: #ff6709;
+	margin: 0;
+}
+
+.rainbow-item-img {
+    width: 160px;
+    height: 160px;
+}

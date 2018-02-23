@@ -1,76 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon">
-  <title>小米商城</title>
-  <link rel="stylesheet" href="./style/normalize.css">
-  <link rel="stylesheet" href="./style/common.css">
-  <link rel="stylesheet" href="./style/nav.css">
-</head>
-<body>
-  <nav class="container">
-    <div class="row clearfix">
-      <div class="util-left">
-        <a class="nav-link" target="_blank" href="#">小米商场</a>
-        <a class="nav-link" target="_blank" href="#">MIUI</a>
-        <a class="nav-link" target="_blank" href="#">米聊</a>
-        <a class="nav-link" target="_blank" href="#">游戏</a>
-        <a class="nav-link" target="_blank" href="#">多看阅读</a>
-        <a class="nav-link" target="_blank" href="#">云服务</a>
-        <a class="nav-link" target="_blank" href="#">金融</a>
-        <a class="nav-link" target="_blank" href="#">小米商城移动版</a>
-        <a class="nav-link" target="_blank" href="#">问题反馈</a>
-        <a class="nav-link" target="_blank" href="#">Select Region</a>
-      </div>
-      <div class="util-right">
-        
-      </div>
-    </div>
-  </nav>
-  <div class="container">
-    <header class="row"></header>
-  </div>
-  <div class="container">
-    <div class="row catories-banners"></div>
-  </div>
-  <div class="container">
-    <div class="row activies"></div>
-  </div>
-  <div class="container">
-    <div class="row star-products"></div>
-  </div>
-  <div class="container grey">
-    <div class="smart-hardwares"></div>
-  </div>
-  <div class="container grey">
-    <div class="row music"></div>
-  </div>
-  <div class="container grey">
-    <div class="row accessories"></div>
-  </div>
-  <div class="container grey">
-    <div class="row around"></div>
-  </div>
-  <div class="container grey">
-    <div class="row recomend"></div>
-  </div>
-  <div class="container grey">
-    <div class="row hot"></div>
-  </div>
-  <div class="container grey">
-    <div class="row content"></div>
-  </div>
-  <div class="container grey">
-    <div class="row videos"></div>
-  </div>
-  <div class="container">
-    <div class="row links"></div>
-  </div>
-  <footer>
 
-  </footer>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon">
+    <title>小米商城</title>
+    <link rel="stylesheet" type="text/css" href="./style/icon-font/iconfont.css">
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/common.css">
+    <link rel="stylesheet" href="./style/nav.css">
+    <link rel="stylesheet" href="./style/header-logo.css">
+    <link rel="stylesheet" href="./style/category-banner.css">
+    <link rel="stylesheet" href="./style/activities.css">
+    <link rel="stylesheet" href="./style/star-products.css">
+    <link rel="stylesheet" href="./style/smart-hardwares.css">
+</head>
+
+<body>
+    <nav class="container">
+        <div class="row clearfix">
+            <div class="util-left">
+                <a class="nav-link" target="_blank" href="#">小米商场</a>
+                <a class="nav-link" target="_blank" href="#">MIUI</a>
+                <a class="nav-link" target="_blank" href="#">米聊</a>
+                <a class="nav-link" target="_blank" href="#">游戏</a>
+                <a class="nav-link" target="_blank" href="#">多看阅读</a>
+                <a class="nav-link" target="_blank" href="#">云服务</a>
+                <a class="nav-link" target="_blank" href="#">金融</a>
+                <a class="nav-link" target="_blank" href="#">小米商城移动版</a>
+                <a class="nav-link" target="_blank" href="#">问题反馈</a>
+                <a class="nav-link" target="_blank" href="#">Select Region</a>
+            </div>
+            <div class="util-right">
+                <a class="nav-link" target="_blank" href="#">登录</a>
+                <a class="nav-link" target="_blank" href="#">注册</a>
+                <a class="nav-link" target="_blank" href="#">消息通知</a>
+                <a class="nav-link cart" target="_blank" href="#">
+                    <i class="iconfont icon-gouwuche"></i> 购物车
+                    <span>（0）</span>
+                </a>
+                <div class="cart-menu">购物车中还没有商品，赶紧选购吧！</div>
+            </div>
+        </div>
+    </nav>
+    <div class="container mi-header">
+        <header class="row clearfix">
+            <a class="mi-logo" href="#">
+                <img class="mi-logo-img" src="./image/mi-logo.png" alt="小米logo">
+            </a>
+            <a class="gif-img" href="#">
+            </a>
+            <ul class="header-nav">
+                <li class="header-nav-item"><a class="header-nav-item-link" href="#">小米手机</a></li>
+                <li class="header-nav-item"><a class="header-nav-item-link" href="#">红米</a></li>
+                <li class="header-nav-item"><a class="header-nav-item-link" href="#">平板 · 笔记本</a></li>
+                <li class="header-nav-item"><a class="header-nav-item-link" href="#">电视</a></li>
+                <li class="header-nav-item"><a class="header-nav-item-link" href="#">盒子 · 影音</a></li>
+                <li class="header-nav-item"><a class="header-nav-item-link" href="#">路由器</a></li>
+                <li class="header-nav-item"><a class="header-nav-item-link" href="#">智能硬件</a></li>
+                <li class="header-nav-item"><a class="header-nav-item-link" href="#">服务</a></li>
+                <li class="header-nav-item"><a class="header-nav-item-link" href="#">社区</a></li>
+            </ul>
+            <div class="header-search clearfix">
+                <input class="header-search-input" type="text" placeholder="红米4X 小米电视4A 49英寸">
+                <div class="header-search-icon-container">
+                    <i class="iconfont icon-search header-search-icon"></i>
+                </div>
+            </div>
+        </header>
+    </div>
+    <div class="container">
+        <div class="row category-banners">
+            <ul class="category-item">
+                <li class="category-item-list"><a href="#" class="category-item-list-link">手机 电话卡</a><i class="iconfont icon-right"></i></li>
+                <li class="category-item-list"><a href="#" class="category-item-list-link">笔记本 平板</a><i class="iconfont icon-right"></i></li>
+                <li class="category-item-list"><a href="#" class="category-item-list-link">电视 盒子</a><i class="iconfont icon-right"></i></li>
+                <li class="category-item-list"><a href="#" class="category-item-list-link">路由器 智能硬件</a><i class="iconfont icon-right"></i></li>
+                <li class="category-item-list"><a href="#" class="category-item-list-link">移动电源 电池 插线板</a><i class="iconfont icon-right"></i></li>
+                <li class="category-item-list"><a href="#" class="category-item-list-link">耳机 音箱</a><i class="iconfont icon-right"></i></li>
+                <li class="category-item-list"><a href="#" class="category-item-list-link">保护套 贴膜</a><i class="iconfont icon-right"></i></li>
+                <li class="category-item-list"><a href="#" class="category-item-list-link">线材 支架 存储卡</a><i class="iconfont icon-right"></i></li>
+                <li class="category-item-list"><a href="#" class="category-item-list-link">箱包 服饰</a><i class="iconfont icon-right"></i></li>
+                <li class="category-item-list"><a href="#" class="category-item-list-link">米兔 生活周边</a><i class="iconfont icon-right"></i></li>
+            </ul>
+            <div class="category-banners-item">
+                <a href="#"><img src="./image/xmad_14890540335855_wTxbY.jpg" alt="轮播图片" class="category-banners-item-img"></a>
+                <a href="#"><img src="./image/xmad_14889653089832_lSZoz.jpg" alt="轮播图片" class="category-banners-item-img"></a>
+                <a href="#"><img src="./image/xmad_14900670114626_hSaDE.jpg" alt="轮播图片" class="category-banners-item-img"></a>
+                <a href="#"><img src="./image/xmad_14901763921008_mXDyA.jpg" alt="轮播图片" class="category-banners-item-img"></a>
+                <a href="#"><img src="./image/xmad_14889653089832_lSZoz.jpg" alt="轮播图片" class="category-banners-item-img"></a>
+            </div>
+        </div>
+    </div>
+    <div class="container mi-activities clearfix">
+        <div class="row activities">
+            <ul class="home-channel-list clearfix">
+                <li class="home-channel-list-tips"><a class="home-channel-list-tips-link" href="#"><i class="iconfont icon-shouji"></i>选购手机</a></li>
+                <li class="home-channel-list-tips"><a class="home-channel-list-tips-link" href="#"><i class="iconfont icon-liwu"></i>企业团购</a></li>
+                <li class="home-channel-list-tips"><a class="home-channel-list-tips-link" href="#"><i class="iconfont icon-yibantishi"></i>一元活动</a></li>
+                <li class="home-channel-list-tips"><a class="home-channel-list-tips-link" href="#"><i class="iconfont icon-wodetongxin"></i>小米移动</a></li>
+                <li class="home-channel-list-tips"><a class="home-channel-list-tips-link" href="#"><i class="iconfont icon-duihuan"></i>以旧换新</a></li>
+                <li class="home-channel-list-tips"><a class="home-channel-list-tips-link" href="#"><i class="iconfont icon-zhangdan"></i>话费充值</a></li>
+            </ul>
+            <ul class="home-promo-list clearfix">
+                <li class="home-promo-list-tips">
+                    <a class="home-promo-list-link" href="#"><img class="home-promo-list-img" src="./image/xmad_14904558593599_qQNtC.jpg" alt="活动页图片"></a>
+                </li>
+                <li class="home-promo-list-tips">
+                    <a class="home-promo-list-link" href="#"><img class="home-promo-list-img" src="./image/xmad_14904558593599_qQNtC.jpg" alt="活动页图片"></a>
+                </li>
+                <li class="home-promo-list-tips">
+                    <a class="home-promo-list-link" href="#"><img class="home-promo-list-img" src="./image/xmad_14904558593599_qQNtC.jpg" alt="活动页图片"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row star-products">
+            <h2 class="title">小米明星单品</h2>
+            <ul class="star-products-item clearfix">
+                <li class="rainbow-item-list">
+                    <a href="#" class="rainbow-item-link"><img class="rainbow-item-img" src="./image/e991f1e2-20d8-40c3-bf1d-012b122c986b.png" alt="小米商品图片"></a>
+                    <h3><a href="#">小米5s Plus</a></h3>
+                    <p class="desc">大屏双摄手机，拍照黑科技</p>
+                    <p class="price">2299元起</p>
+                </li>
+                <li class="rainbow-item-list">
+                    <a href="#" class="rainbow-item-link"><img class="rainbow-item-img" src="./image/e991f1e2-20d8-40c3-bf1d-012b122c986b.png" alt="小米商品图片"></a>
+                    <h3><a href="#">小米5s Plus</a></h3>
+                    <p class="desc">大屏双摄手机，拍照黑科技</p>
+                    <p class="price">2299元起</p>
+                </li>
+                <li class="rainbow-item-list">
+                    <a href="#" class="rainbow-item-link"><img class="rainbow-item-img" src="./image/e991f1e2-20d8-40c3-bf1d-012b122c986b.png" alt="小米商品图片"></a>
+                    <h3><a href="#">小米5s Plus</a></h3>
+                    <p class="desc">大屏双摄手机，拍照黑科技</p>
+                    <p class="price">2299元起</p>
+                </li>
+                <li class="rainbow-item-list">
+                    <a href="#" class="rainbow-item-link"><img class="rainbow-item-img" src="./image/e991f1e2-20d8-40c3-bf1d-012b122c986b.png" alt="小米商品图片"></a>
+                    <h3><a href="#">小米5s Plus</a></h3>
+                    <p class="desc">大屏双摄手机，拍照黑科技</p>
+                    <p class="price">2299元起</p>
+                </li>
+                <li class="rainbow-item-list">
+                    <a href="#" class="rainbow-item-link"><img class="rainbow-item-img" src="./image/e991f1e2-20d8-40c3-bf1d-012b122c986b.png" alt="小米商品图片"></a>
+                    <h3><a href="#">小米5s Plus</a></h3>
+                    <p class="desc">大屏双摄手机，拍照黑科技</p>
+                    <p class="price">2299元起</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="grey">
+        <div class="container">
+            <div class="row smart-hardwares">
+                <h2 class="title">智能硬件</h2>
+                <div class="read-more">
+                    <a href="#">查看全部<i class="iconfont icon-right"></i></a>
+                </div>
+                <a href="#"><img class="smart-hardwares-img" src="./image/type-c.34.png" alt="79元起送插头"></a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row music"></div>
+        </div>
+        <div class="container">
+            <div class="row accessories"></div>
+        </div>
+        <div class="container">
+            <div class="row around"></div>
+        </div>
+        <div class="container">
+            <div class="row recomend"></div>
+        </div>
+        <div class="container">
+            <div class="row hot"></div>
+        </div>
+        <div class="container">
+            <div class="row content"></div>
+        </div>
+        <div class="container">
+            <div class="row videos"></div>
+        </div>
+        <div class="container">
+            <div class="row links"></div>
+        </div>
+    </div>
+    <footer>
+    </footer>
 </body>
+
 </html>

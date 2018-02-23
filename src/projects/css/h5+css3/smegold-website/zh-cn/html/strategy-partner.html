@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>中小融辅软件科技(上海)有限公司官网</title>
+    <meta name="description" content="专业金融咨询解决方案，自助研发金融服务系统，专属定制服务，专业、创新、诚信、品优，科技服务金融，科技创新金融，专业化、全方位服务，致力于成为金融服务领域的标杆企业。">
+    <meta name="keyword" content="中小融辅，金融咨询，金融服务，顾问服务，管理服务，系统服务">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/about-smegold.css">
+    <link rel="stylesheet" href="../css/strategy-partner.css">
+</head>
+
+<body>
+<!-- 头部导航 -->
+    <header id="header" class="center-container header clearfix"></header>
+    <!-- 返回顶部按钮 -->
+    <div class="return-top"></div>
+    <!-- 页面内部导航 -->
+    <ul class="nav-list" id="menu">
+        <li class="nav-item">
+            <a class="nav-link current" href="#item1">战略合作伙伴</a>
+        </li>
+    </ul>
+    <!-- 首屏 -->
+    <section class="main-container partner-main-container">
+        <div class="center-container">
+            <div class="circle">
+                <h1 class="circle-headline">战略合作伙伴</h1>
+                <h3 class="circle-subheadline">Strategy Partner</h3>
+            </div>
+        </div>
+    </section>
+    <!-- 战略合作伙伴 -->
+    <section class="item-container partner-container" id="item1">
+        <div class="center-container center-text">
+            <h1 class="headline item-headline">战略合作伙伴</h1>
+            <h3 class="subheadline">Strategy Partner</h3>
+        </div>
+        <ul class="center-container center-text flex-tablist">
+            <li class="flex-item partner-item">
+                <a href="http://www.youedata.com/index.html" target="_blank"></a>
+            </li>
+            <li class="flex-item partner-item">
+                <a href="http://www.acmr.com.cn/" target="_blank"></a>
+            </li>
+            <li class="flex-item partner-item">
+                <a href="https://www.piccfs.com.cn/" target="_blank"></a>
+            </li>
+            <li class="flex-item partner-item">
+                <a href="http://www.acedata.com.cn/" target="_blank"></a>
+            </li>
+            <li class="flex-item partner-item">
+                <a href="https://www.tsign.cn/" target="_blank"></a>
+            </li>
+        </ul>
+    </section>
+    <!-- 底部联系方式 -->
+    <footer id="footer"></footer>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script>
+    jQuery(document).ready(function($) {
+        //头部加载
+        $('#header').load('header.html', function() {
+            $('.anchor-link').eq(3).addClass('anchor-link-active');
+        });
+
+        // 底部加载
+        $('#footer').load('footer.html');        
+    });
+    </script>
+</body>
+
+</html>

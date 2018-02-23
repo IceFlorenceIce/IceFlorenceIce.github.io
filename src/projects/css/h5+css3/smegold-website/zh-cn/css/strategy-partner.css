@@ -1,0 +1,74 @@
+/*首屏
+==========================================================================
+*/
+
+.partner-main-container {
+    background: url('../img/partnerBanner.png') center top no-repeat;
+}
+
+
+/*战略合作伙伴
+==========================================================================
+*/
+
+.partner-container {
+    background-color: #fff;
+}
+
+.partner-item {
+    width: 216px;
+    height: 84px;
+    padding: 10px;
+    border: 1px solid #c2c2c2;
+    margin-right: 25px;
+}
+
+.partner-item a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.partner-item:last-child {
+    margin-right: 0;
+}
+
+.partner-item:nth-child(1) {
+    background: url('../img/yysjPartner.png') center center no-repeat;
+}
+
+.partner-item:nth-child(1):hover {
+    background: url('../img/yysjPartner2.png') center center no-repeat;
+}
+
+.partner-item:nth-child(2) {
+    background: url('../img/htrPartner.png') center center no-repeat;
+}
+
+.partner-item:nth-child(2):hover {
+    background: url('../img/htrPartner2.png') center center no-repeat;
+}
+
+.partner-item:nth-child(3) {
+    background: url('../img/rbjfPartner.png') center center no-repeat;
+}
+
+.partner-item:nth-child(3):hover {
+    background: url('../img/rbjfPartner2.png') center center no-repeat;
+}
+
+.partner-item:nth-child(4) {
+    background: url('../img/yfsjPartner.png') center center no-repeat;
+}
+
+.partner-item:nth-child(4):hover {
+    background: url('../img/yfsjPartner2.png') center center no-repeat;
+}
+
+.partner-item:nth-child(5) {
+    background: url('../img/tgkjPartner.png') center center no-repeat;
+}
+
+.partner-item:nth-child(5):hover {
+    background: url('../img/tgkjPartner2.png') center center no-repeat;
+}

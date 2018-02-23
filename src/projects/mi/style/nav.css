@@ -1,29 +1,63 @@
 nav {
-  background-color: #333;
+    background-color: #333;
+    height: 40px;
 }
 
-.nav-link{
-  font-size: 12px;
-  line-height: 40px;
-  color: #b0b0b0;
-  text-decoration: none;
+nav.container {
+    margin-top: 0;
+}
+
+.nav-link {
+    font-size: 12px;
+    line-height: 40px;
+    color: #b0b0b0;
+    text-decoration: none;
 }
 
 .nav-link::after {
-  content: '';
-  height: 17px;
-  vertical-align: middle;
-  display: inline-block;
-  margin-left: 6px;
-  border-left: solid 1px #424242;
-  padding-right: 6px;
+    content: '';
+    height: 17px;
+    vertical-align: middle;
+    display: inline-block;
+    margin-left: 6px;
+    border-left: solid 1px #424242;
+    padding-right: 6px;
 }
 
-.nav-link:last-child::after {
-  content: '';
-  visibility: hidden;
+.nav-link:last-of-type::after, .util-right > .nav-link:nth-child(3)::after {
+    content: '';
+    position: absolute;
+    visibility: hidden;
 }
 
 .nav-link:hover {
-  color: #fff;
+    color: #fff;
+}
+
+.cart {
+    display: inline-block;
+    width: 120px;
+    text-align: center;
+    margin-left: 15px;
+    position: relative;
+}
+
+.cart:hover {
+    color: #ff6700;
+    background-color: #fff;
+}
+
+
+.icon-gouwuche {
+    height: 40px;
+}
+
+.cart-menu {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, .15);
 }

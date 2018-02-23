@@ -1,0 +1,46 @@
+<a href="../index.html" class="logo"></a>
+<nav>
+    <ul class="anchor">
+        <li>
+            <a class="anchor-link" href="about-smegold.html">關於SMEGOLD</a>
+        </li>
+        <li>
+            <a class="anchor-link" href="service-content.html">服務內容</a>
+        </li>
+        <li>
+            <a class="anchor-link" href="successful-case.html">成功案例</a>
+        </li>
+        <li>
+            <a class="anchor-link" href="strategy-partner.html">戰略合作夥伴</a>
+        </li>
+        <li>
+            <a class="anchor-link language-active" href="javascript:void(0)" id="complex">繁體</a>
+        </li>
+        <li>
+            <a class="anchor-link" href="javascript:void(0)" id="simple">簡體</a>
+        </li>
+    </ul>
+</nav>
+<script>
+    // 简体和繁体切换
+    var url = window.location.href;
+    var simple = $('#simple');
+    var complex = $('#complex');
+    simple.click(function() {
+        if(url.indexOf('zh-cn') != -1) {
+            return;
+        } else {
+            var url2 = url.replace('zh-tw','zh-cn');
+            window.location.href = url2;
+        }
+    });
+    complex.click(function() {
+        if(url.indexOf('zh-tw') != -1) {
+            return;
+        } else {
+            var url2 = url.replace('zh-cn','zh-tw');
+            window.location.href = url2;
+            
+        }
+    });
+</script>
